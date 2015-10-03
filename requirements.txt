@@ -1,4 +1,8 @@
 flask
+## Flask-login 0.3.0 breaks backwards compatibility, and 
+## flask-security's requirements.txt is broken and installs
+## it anyways, resulting in a fucked install.
+flask-login<0.3.0
 flask-admin
 flask-assets
 flask-debugtoolbar

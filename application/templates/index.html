@@ -2,7 +2,7 @@
 
 {# shorthand #}
 {% set u = current_user %}
-{% set auth = u.is_authenticated %}
+{% set auth = u.is_authenticated() %}
 
 {% block title %}flask-forum{% endblock %}
 
@@ -39,6 +39,6 @@
 
 <h2><a href="{{ url_for('forum.index') }}">The forum</a></h2>
 
-<p>A basic forum. There are multiple <dfn>boards</dfn>, each board has multiple <dfn>threads</dfn>, and each thread has multiple <dfn>posts</dfn>. Users can create threads and posts, but only administrators can create boards. You can create a new board by using the <a href="{{ url_for('boardview.create_view') }}">admin panel</a>.</p>
+{# <p>A basic forum. There are multiple <dfn>boards</dfn>, each board has multiple <dfn>threads</dfn>, and each thread has multiple <dfn>posts</dfn>. Users can create threads and posts, but only administrators can create boards. You can create a new board by using the <a href="{{ url_for('boardview.create_view') }}">admin panel</a>.</p> #}
 
 {% endblock %}
