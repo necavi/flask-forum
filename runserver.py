@@ -1,4 +1,4 @@
 from application import app, db
 
 db.create_all()
-app.run()
+app.run(host='0.0.0.0')

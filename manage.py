@@ -5,7 +5,7 @@ from application import app, db
 manager = Manager(app)
 manager.add_command('create_user', sec.CreateUserCommand())
 manager.add_command('create_role', sec.CreateRoleCommand())
-manager.add_command('add_role', sec.AddRoleCommand())
+manager.add_command('add_role',    sec.AddRoleCommand())
 manager.add_command('remove_role', sec.RemoveRoleCommand())
 
 

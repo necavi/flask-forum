@@ -20,11 +20,11 @@ assets.register('all-css', less)
 
 # Database
 db = SQLAlchemy(app)
-import models
+from . import models
 
 
 # Admin
-import admin
+from . import admin
 
 
 # Markdown
@@ -48,5 +48,5 @@ def index():
     return render_template('index.html', User=models.User)
 
 
-import forum.views as forum
+import application.forum.views as forum
 app.register_blueprint(forum.bp, url_prefix='/forum')

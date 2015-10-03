@@ -4,7 +4,7 @@ from flask.ext.security import current_user, login_required
 
 from application import db
 from application.models import Board, Thread, Post, User
-import forms
+from . import forms
 
 GET_POST = ['GET', 'POST']
 
