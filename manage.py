@@ -1,5 +1,5 @@
-from flask.ext.script import Manager
-import flask.ext.security.script as sec
+from flask_script import Manager
+import flask_security.script as sec
 from application import app, db
 
 manager = Manager(app)
